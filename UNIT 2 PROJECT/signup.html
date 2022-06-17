@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./signup.css">
+    </head>
+    <body>
+        <nav class="signup__navbar">
+            <a href="./index.html">
+                <img src = "https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg"/>
+            </a>
+        </nav>
+
+        <section class="signup__form">
+            <h1>About You</h1>
+            <h3 class="header-two">Sign Up With</h3>
+
+            <div class="signup--with">
+                <div>
+                    <a href="#">
+                    <svg width="24" height="24" data-testid="social-button-icon"><g fill="none"><path fill="#4267B2" d="M22.675 0H1.333C.597 0 0 .597 0 1.333v21.35C.01 23.413.603 24 1.333 24h11.5v-9.282h-3.13v-3.631h3.117V8.42c0-3.1 1.893-4.788 4.667-4.788a25.96 25.96 0 012.795.141V7h-1.915c-1.5 0-1.797.715-1.797 1.763v2.324h3.597l-.467 3.631h-3.13V24h6.105A1.333 1.333 0 0024 22.675V1.333C24 .6 23.408.005 22.675 0z"></path><path fill="#FFF" d="M16.57 24v-9.282h3.13l.467-3.631H16.57V8.772c0-1.049.292-1.764 1.797-1.764h1.906V3.767a25.96 25.96 0 00-2.795-.142c-2.765 0-4.658 1.688-4.658 4.788v2.667H9.703v3.638h3.117V24h3.75z"></path></g></svg></a>
+                    <a href="#">Facebook</a>
+                
+                   
+                </div>
+                <div>
+                    <a href="#">
+                    <svg width="24" height="24" data-testid="social-button-icon"><defs><path id="google_svg__a" d="M11.52 2.94c0 3.653-1.31 6.73-3.579 8.82H4.064V8.748a5.522 5.522 0 002.395-3.621H0V.485h11.301a13.7 13.7 0 01.219 2.455z"></path><path id="google_svg__c" d="M12 10.667c-4.69 0-8.75-2.69-10.724-6.611V.946h4.01C6.228 3.784 8.874 5.894 12 5.894c1.615 0 2.99-.425 4.064-1.145l3.877 3.012C17.956 9.592 15.24 10.667 12 10.667z"></path><path id="google_svg__e" d="M5.285 8.947l-4.009 3.109A12.007 12.007 0 010 6.666c0-1.935.464-3.769 1.276-5.389h4.01v3.11a7.213 7.213 0 00-.377 2.28c0 .79.136 1.56.376 2.28z"></path><path id="google_svg__g" d="M12 4.773c-3.125 0-5.77 2.111-6.715 4.947L1.276 6.61A11.997 11.997 0 0112 0c3.235 0 5.95 1.19 8.03 3.125l-3.443 3.442C15.344 5.379 13.76 4.773 12 4.773z"></path></defs><g fill="none" fill-rule="evenodd"><g transform="translate(12 9.333)"><mask id="google_svg__b" fill="#fff"><use xlink:href="#google_svg__a"></use></mask><path fill="#318AF5" d="M-.027 11.893h11.68V.373H-.027z" mask="url(#google_svg__b)"></path></g><g transform="translate(0 13.333)"><mask id="google_svg__d" fill="#fff"><use xlink:href="#google_svg__c"></use></mask><path fill="#3DA751" d="M1.253 10.773h18.72V.853H1.253z" mask="url(#google_svg__d)"></path></g><g transform="translate(0 5.333)"><mask id="google_svg__f" fill="#fff"><use xlink:href="#google_svg__e"></use></mask><path fill="#FDB900" d="M-.027 12.213h5.44V1.173h-5.44z" mask="url(#google_svg__f)"></path></g><mask id="google_svg__h" fill="#fff"><use xlink:href="#google_svg__g"></use></mask><path fill="#EA3E36" d="M1.253 9.867h18.88v-9.92H1.253z" mask="url(#google_svg__h)"></path></g></svg>
+                    <a href="#">Google</a>
+                    </a>
+                </div>
+            </div>
+
+            <hr/>
+
+
+            <h3 class="create-an-email-acc">Or create an email account</h3>
+            <form id = "form">
+            <p class="input__label">*Full Name</p>
+            <input class="input__box" id = "name" type="text"/>
+
+            <p class="input__label">*Email address</p>
+            <input class="input__box" id = "email" type="email"/>
+
+
+            <p class="input__label">*Confirm Email address</p>
+            <input class="input__box" type="email"/>
+
+
+            <p class="input__label">*Password</p>
+            <input class="input__box" id = "password" type="password"/>
+            <span class="input__captions" >Include a minimum of 6 characters, and contain at least 1 number</span>
+
+            <p class="input__label">*Confirm Password</p>
+            <input class="input__box" type="password"/>
+
+
+            <p class="input__label">Cell Phone Number <span class="input__label__span">(Optional)</span></p>
+            <input class="input__box" id = "mobile" type="number"/>
+            <span class="input__captions" >We will use this number to send occasional promotional messages.</span>
+
+
+            <div class="input__referral__code">
+                <p class="input__label">Referral Code <span class="input__label__span">(Optional)</span></p>
+            <input class="input__box" type="text"/>
+            <span class="input__captions">* Your referrals discount is automatically applied at cart</span>
+
+
+            </div>
+
+
+            <input type="submit" class="input__label input__submit__signup" value="CONTINUE"/> 
+
+            </form>
+
+            <p class="tc__signup">By proceeding, you are confirming that you agree to our <b><u>Terms and Conditions</u></b> and<br/> <b><u>PrivacyPolicy</u></b></p>
+
+
+        </section>
+
+        
+
+
+
+
+        
+        <script >
+            var userCred =  [];
+
+            var form = document.getElementById('form')
+
+            form.addEventListener('submit', function(event){
+                event.preventDefault();
+
+                var userCredObj = {
+                    name : form.name.value,
+                    email : form.email.value,
+                    password : form.password.value,
+                    mobile : form.mobile.value
+                }
+                userCred.push(userCredObj);
+                localStorage.setItem('userCredentials', JSON.stringify(userCred));
+                window.location.href = "./login.html";
+            })
+
+
+        </script>
+    </body>
+</html>

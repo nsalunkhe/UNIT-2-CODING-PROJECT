@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+body {
+    background-color: #F2F2F2;  
+}
+
+h1{
+    color: #333333;
+    /* font-weight: 900; */
+}
+
+.header-two{
+    margin: 50px 0 0 0;
+    color: #333333;
+}
+
+.signup__navbar{
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 4px 20px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+
+    background-color: #FFFFFF;
+}
+.signup__navbar  img{
+    height: 60px;
+} 
+
+.signup__form{
+    margin: 130px auto;
+    background-color: #FFFFFF;
+    width: 50%;
+    padding: 30px;
+}
+.signup--with{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    /* width: 80%; */
+}
+.signup--with > div{
+    text-align: center;
+    display: flex;
+    /* height: 30px; */
+    padding: 4px 105px;
+    /* width: 300px; */
+    border: 1px solid #333333;
+    cursor: pointer;
+    /* justify-content: space-between; */
+}
+
+.signup--with > div:hover{
+    background-color: #F2F2F2;
+    border: none;
+    transition: 0.1s;
+    /* padding: 5px 106px; */
+}
+
+
+.signup--with > div > a{
+    text-decoration: none;
+    color: #666666;
+    font-weight: 550;
+    font-size: 14px;
+    margin: 0 auto;
+    /* padding: 5px */
+}
+
+.signup--with > div > a:nth-child(1){
+    padding: 5px
+}
+
+.signup--with > div > a:nth-child(2){
+    padding: 8px
+}
+hr{
+    margin: 50px 0 0 0;
+    background-color: #CCCCCC;
+    
+
+}
+
+.create-an-email-acc{
+    margin: 30px 0 0 0;
+    color: #333333;
+}
+
+.input__label{
+    margin: 35px 0 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+}
+.input__label__span{
+    color: #4C4C4C;
+    font-weight: 100;
+}
+.input__box{
+    
+    width: 100%;
+    border: 1px solid #868686;
+    border-radius: 5px;
+    height: 50px;
+    margin: 15px 0 0 0;
+}
+
+.input__captions{
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+}
+.input__label > p > span{
+    font-weight: 300;
+    font-size: 16px;
+    color: #666666;
+}
+
+
+.input__referral__code{
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    margin: 30px 0 0 0;
+
+}
+.input__referral__code > p{
+    margin: 5px 0 0 0 !important;
+}
+
+.input__referral__code > input{
+    margin: 10px 0 0 0 !important;
+}
+
+
+.input__submit__signup{
+    padding: 15px;
+    color: #FFFFFF;
+    background-color: #2E3337;
+    border:none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.input__submit__signup:hover{
+    background-color: #27BDB7;
+    color: #000000;
+}
+
+.tc__signup{
+    margin: 30px 0 0 0;
+    font-weight: 300;
+    font-size: 16px;
+    color: #4C4C4C;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./payment.css">
+    </head>
+    <body>
+        <nav class="payment_navbar">
+            <a href="./index.html">
+            <img src = "https://s1.thcdn.com/checkout/resources/images/e1ea488cfe9c3b7fc40c08ba4949b1c9.svg" />
+            </a>
+        </nav>
+
+
+        <section class="payment_container">
+            <div>
+                <h3>1. Email and delivery address</h3>
+                <p class="input__spacing">*Email address</p>
+                <input class="input__box"/>
+                <p>We'll send the purchase receipt to this email.</p>
+
+                <p class="input__spacing">*Country/Region</p>
+                <input class="input__box"/>
+                
+
+
+                <p class="input__spacing">*Full Name</p>
+                <input class="input__box"/>
+               
+
+
+
+                <p class="input__spacing">*Zip Code/Postcode</p>
+                <input class="input__box"/>
+            
+
+
+                <p class="input__spacing">*Company Name</p>
+                <input class="input__box"/>
+                
+
+
+
+                <p class="input__spacing">*Address</p>
+                <input class="input__box"/>
+               
+
+
+                <p class="input__spacing">*Address 2</p>
+                <input class="input__box"/>
+
+
+                <p class="input__spacing">*Contact Number</p>
+                <input class="input__box"/>
+                <p><u>Why do we need your number?</u></p>
+
+                <h3 class="header_spacing">2. Select Payment Method</h3>
+                <img src="https://s1.thcdn.com/checkout/resources/images/5ea52bff4335c6810730e818e701bdf5.svg" alt=""/>
+                    <img src="https://s1.thcdn.com/checkout/resources/images/57987be4eb98b4c77644d93d92df80fa.svg" alt=""/>
+                    <img src="https://s1.thcdn.com/checkout/resources/images/932e82ef072c7df18e91e66b96dfdf5d.svg" alt=""/>
+                    <img src="https://s1.thcdn.com/checkout/resources/images/6732c0137a7dab50b23daf1337fe2f30.svg" alt=""/>
+                    <img src="https://s1.thcdn.com/checkout/resources/images/c6b3c4b8eea09a08c22da2cef43e15a5.svg" alt=""/>
+
+                    <p class="input__spacing">*Name on Card</p>
+                    <input class="input__box"/>
+                    
+                    <p class="input__spacing">*Credit Card Number</p>
+                    <input class="input__box"/> 
+
+
+                    <p class="input__spacing">*Exp Month</p>
+                    <input class="input__box"/> 
+
+
+                    <p class="input__spacing">*Exp Year</p>
+                    <input class="input__box"/> 
+
+                    <p class="input__spacing">*CVV</p>
+                    <input class="input__box"/>
+
+                   
+                        <input class="header_spacing" type="checkbox" checked="checked""> Use my shipping address as my cardholder address</input>
+                    
+                     <button onclick="redirectSuccess()">SUBMIT MY ORDER</button>   
+                    
+                     <p>By placing this order, you are confirming that you agree to our <u>Terms and Conditions </u>&nbsp;and<br><u>Privacy Policy.</u></p>
+              
+                
+            </div>
+
+
+            <div class="productdetails">
+                <div class="">
+                    <p>Order Summary</p>
+                    <p id = "total_quant">0</p>
+                </div>
+                <div class="order_no">
+                    <p>Order Number: 402632476</p>
+                </div>
+    
+                <div class="order_item_container" id = "order_item_container">
+                    <!-- Append Start From Here -->
+                </div>
+    
+                <div class="order_delivery">
+                    <p>Delivery</p>
+                    <p>Calculated at next step</p>
+                </div>
+    
+                <div class="total_pay">
+                    <p>Total to pay</p>
+                    <p id = "total_price_final">$0.00</p>
+                </div>
+    
+               
+            </div>
+        </section>
+        
+       
+
+
+       
+        
+        <script>
+            var cartArr = JSON.parse(localStorage.getItem('cartItems'));
+            // console.log(cartArr);
+            var finalPrice = JSON.parse(localStorage.getItem('finalPrice')) || "$ 0.00";
+            // console.log(finalPrice);
+            var totalPrice = document.getElementById('total_price_final');
+            totalPrice.innerText = "$"+finalPrice;
+            var count = 0;
+
+            var orderItemContainer = document.getElementById('order_item_container');
+
+            window.addEventListener('load', function(){
+                cartArr.forEach(element => {
+                    
+                    var parent = document.createElement('div');
+
+                    var div1 = document.createElement('div');
+
+                    var img_item = document.createElement('img');
+                    img_item.src = element.image_url;
+                    div1.append(img_item);
+                    
+                    var div2 = document.createElement('div');
+
+                    var p1 = document.createElement('p');
+                    p1.innerText = element.name;
+
+                    
+                    var p2 = document.createElement('p');
+                    p2.innerText = "$"+element.price;
+
+                    var p3 = document.createElement('p');
+                    p3.innerText = "Quantity:"+element.quantity;
+
+                    count = count + Number(element.quantity)
+                    
+
+                    div2.append(p1,p2,p3)
+
+                    parent.append(div1,div2);
+
+                    orderItemContainer.append(parent);
+
+                });
+                var totalQuantity = document.getElementById('total_quant');
+                totalQuantity.innerText = count+" "+"items"
+            })
+
+
+            function redirectSuccess(){
+                window.location.href = "./success.html"
+            }
+
+            // console.log(count);
+
+
+        </script>
+    </body>
+</html>

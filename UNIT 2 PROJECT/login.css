@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+body {
+    background-color: #F2F2F2;  
+}
+
+.login__navbar{
+    display: flex;
+    padding: 4px 20px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.login__navbar  img{
+    height: 60px;
+} 
+
+.login__container{
+    margin: 140px auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    width: 80%;
+    justify-content: space-evenly;
+
+}
+
+.login__container > div{
+    /* border: 1px solid red; */
+    width: 480px;
+    padding: 30px  20px;
+    color: #333333;
+    background-color: #FFFFFF;
+    
+}
+.login__container > div:nth-child(2){
+    height: 180px;
+}
+
+.login__existing__customer h2{
+    font-size: 24px;
+}
+
+
+.input__label{
+    margin: 35px 0 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.input__box{
+    
+    width: 100%;
+    border: 1px solid #868686;
+    border-radius: 5px;
+    height: 50px;
+    margin: 15px 0 0 0;
+}
+
+.input__label__forgot__pass{
+    margin: 40px 0 0 0;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+
+
+.input__submit__login{
+    padding: 15px;
+    color: #FFFFFF;
+    background-color: #2E3337;
+    border:none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.input__submit__login:hover{
+    background-color: #27BDB7;
+    color: #000000;
+}
+
+.social__login{
+    display: flex;
+    margin: 25px 0 0 0;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid red; */
+    
+}
+
+.social__login > div{
+    padding: 10px 50px;
+    border: 1px solid #333333;
+    cursor: pointer;
+    /* width: 200px; */
+}
+
+
+
+.social__login > div:hover{
+    background-color: #F2F2F2;
+    border: none;
+    /* transition: 0.1s; */
+    /* padding: 5px 106px; */
+}
+
+.social__login > div > a{
+    text-decoration: none;
+    color: #666666;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 auto;
+
+}
+
+
+.social__login > div > a:nth-child(2){
+    padding: 5px;
+    /* border: 1px solid red; */
+    float: right;
+}
