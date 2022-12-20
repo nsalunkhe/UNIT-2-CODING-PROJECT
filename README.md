@@ -1,4 +1,4 @@
-           # UNIT-2-CODING-PROJECT
+         
 MY FIRST INDIVIDUAL PROJECT
 #### SkinStore.com_web_clone
 This is clone of SkinStore.com, where I have used HTML, CSS and Javascript to acheive this.
@@ -7,7 +7,7 @@ In this project I have tried to clone the “SkinStore” website.
 
 ![skinstore](https://user-images.githubusercontent.com/66964293/165706636-c182a571-3a0a-48a1-a080-bd3843e67831.png)
 
-### Live Site(https://hilarious-sunflower-e1cbd5.netlify.app)
+### Netlify Link : https://skinstore-ii-clone.netlify.app/
 
 
 # SkinStore-Website-Clone
